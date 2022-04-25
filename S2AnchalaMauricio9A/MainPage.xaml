@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S2AnchalaMauricio9A.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Control de Notas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label x:Name="LblUsuario"></Label>
+        <Label x:Name="LblPassword"></Label>
+
+        <Label x:Name="LblPassword2"></Label>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="Beige" />
+            <Label Text="Nota Seguimiento 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <BoxView Grid.Column="1"
+                  Color="Beige" />
+            <Entry x:Name="txtSeg1" Placeholder="Ingrese nota" 
+                   Grid.Column="1"  
+                Keyboard="Numeric" TextChanged="txtSeg1_TextChanged"></Entry>
+            
+            <BoxView Grid.Row="1"
+                 Color="Beige" />
+            <Label Text="Nota Seguimiento 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="Beige" />
+            <Label Grid.Row="1"
+               Grid.Column="0"
+               Text="Examen 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <Entry x:Name="txtExa1" Placeholder="Ingrese nota Examen" 
+                   Grid.Column="1" Grid.Row="1" 
+                Keyboard="Numeric" TextChanged="txtExa1_TextChanged"></Entry>
+            <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="AliceBlue" />
+            <Label x:Name="lblParcial1" Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text=""
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="Beige" />
+            <Label Text="Nota Seguimiento 1"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <BoxView Grid.Column="1"
+                  Color="Beige" />
+            <Entry x:Name="txtSeg2" Placeholder="Ingrese nota" Grid.Column="1"  
+               Keyboard="Numeric" TextChanged="txtSeg2_TextChanged"></Entry>
+            <BoxView Grid.Row="1"
+                 Color="Beige" />
+            <Label Text="Nota Seguimiento 2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="Beige" />
+            <Label Grid.Row="1"
+               Grid.Column="0"
+               Text="Examen 2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+            <Entry x:Name="txtExa2" Placeholder="Ingrese nota Examen" Grid.Column="1" Grid.Row="1" 
+               Keyboard="Numeric" TextChanged="txtExa2_TextChanged"></Entry>
+            <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="AliceBlue" />
+            <Label x:Name="lblParcial2"  Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text=""
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+        </Grid>
+        <Button x:Name="btnEnviar" Text="Enviar" Clicked="btnEnviar_Clicked"></Button>
+        <Label x:Name="lblFinal" 
+               Grid.Row="2"
+               Grid.ColumnSpan="2"
+               Text=""
+               HorizontalOptions="Center"
+               VerticalOptions="Center" FontSize="Body" TextColor="#FF0000" />
+        
+
+    </StackLayout>
+
+</ContentPage>
